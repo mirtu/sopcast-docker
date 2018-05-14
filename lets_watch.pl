@@ -72,7 +72,9 @@ my $cmd, $rez;
 # sleep a bit and start mpv (vlc)
     sleep 5;
     print "\n\nOK. start VIDEO PLAYER --------------------------\n\n";
-    `mpv http://localhost:30000/tv.asf`;
+    # Replace mpv with corresponding video player, ex. 
+    # `vlc http://localhost:$port/tv.asf`;
+    `mpv http://localhost:$port/tv.asf`;
     
 
 ######################
