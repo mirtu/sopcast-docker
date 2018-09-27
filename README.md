@@ -5,14 +5,14 @@ Create docker container ready for working with sopcast links
 #### 1. clone project: 
 ```git clone https://github.com/mirtu/sopcast-docker.git```
 
-#### 2. use perl 'lets_watch.pl' script to create and start docker container, launch sopcast script inside it and open video player. As an argument of the script is sopcast link in:
+#### 2. use perl 'lets_watch.pl' script to create and start docker container, launch sopcast script inside it and open video player. Surely, you need to have priviliges for network operations, so use sudo. As an argument of the script is sopcast link in:
   * full format, example: 
   ```
-  perl sopcast-docker/lets_watch.pl sop://192.168.12.111/343242
+  sudo perl sopcast-docker/lets_watch.pl sop://192.168.12.111/343242
   ```
   * or brief - specify just channel_id (if sopcast link looks like sop://broker.sopcast.com:3912/channel_id). Example: 
   ```
-  perl sopcast-docker/lets_watch.pl 999999
+  sudo perl sopcast-docker/lets_watch.pl 999999
   ```
 
 ### dependencies
